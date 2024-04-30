@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags para configurações padrão -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Título da página -->
+    <title>Portfólio</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navegação -->
+    <nav>
+      <div class="centralizar">
+        <div class="logo">
+          <!-- Link para a página inicial -->
+          <a href="index.html">
+            <!-- Imagem do logo -->
+            <img src="/img/Logo.png" alt="Logo da empresa" />
+          </a>
+        </div>
+        <!-- Lista de links -->
+        <ul>
+          <!-- Links para outras páginas -->
+              <li><a href="#sobre_mim">Sobre mim</a></li>
+              <li><a href="#formacao">Formação</a></li>
+              <li><a href="#portifolio">Portfólio</a></li>
+              <li><a href="#contato-footer">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Seção Sobre Mim -->
+      <section id="sobre_mim" class="sobre_mim">
+        <header>
+          <!-- Título da seção -->
+          <h2>Sobre mim</h2>
+        </header>
+        <div class="conteudo">
+          <article>
+            <!-- Informações sobre o autor -->
+            <p>
+              Olá! Sou Lincon Cardoso, programador front-end com 1 ano e meio de
+              experiência. Além da programação, adoro jogos de estratégia, boa
+              leitura e caminhar ao ar livre. Sou organizado e sempre em busca
+              de novos desafios. Pronto para enfrentar o que o futuro reservar,
+              estou aberto a oportunidades de colaboração.
+            </p>
+          </article>
+          <!-- Imagem do autor -->
+          <figure>
+            <img src="/img/Foto.png" alt="Foto de Lincon Cardoso" />
+          </figure>
+        </div>
+      </section>
+      <!-- Seção de Formação -->
+      <section id="formacao" class="conteudo-formacao">
+        <header>
+          <!-- Título da seção -->
+          <h2>Formação</h2>
+        </header>
+        <div class="conteudo">
+          <article>
+            <!-- Informações sobre a formação acadêmica -->
+            <p>
+              Atualmente, estou dedicado ao estudo de Análise e Desenvolvimento
+              de Sistemas, uma área que me fascina pela sua interseção entre a
+              lógica e a criatividade. Busco constantemente aprimorar meus
+              conhecimentos e habilidades, mergulhando em conceitos avançados e
+              práticos que impulsionam o desenvolvimento de soluções inovadoras.
+              Minha jornada profissional tem sido marcada por experiências
+              desafiadoras e gratificantes. Ao longo dos projetos que tive a
+              oportunidade de participar, pude aplicar meu conhecimento teórico
+              na prática, desenvolvendo soluções eficientes e intuitivas. Essas
+              experiências têm me proporcionado uma visão abrangente do ciclo de
+              vida do desenvolvimento de software, desde a concepção até a
+              implementação e manutenção.
+            </p>
+          </article>
+          <!-- Imagem relacionada à formação -->
+          <figure>
+            <img src="/img/Frame 2.png" alt="Foto da formação" />
+          </figure>
+        </div>
+      </section>
+      <!-- Seção de Portfólio -->
+      <section id="portifolio" class="portifolio">
+        <header>
+          <!-- Título da seção -->
+          <h2>Portfólio</h2>
+        </header>
+        <div class="portifolio-conteudo">
+          <!-- Links para projetos no GitHub -->
+          <div class="quadrado-azul">
+            <a href="https://github.com/lincon-cardoso/Modelo-de-Banda"
+              >Projeto 01</a
+            >
+          </div>
+          <div class="quadrado-azul">
+            <a href="https://github.com/lincon-cardoso/App-Aprova-de-Bala"
+              >Projeto 02</a
+            >
+          </div>
+          <div class="quadrado-azul">
+            <a href="https://github.com/lincon-cardoso/FlexBlog">Projeto 03</a>
+          </div>
+          <div class="quadrado-azul">
+            <a href="https://github.com/lincon-cardoso/Site-Bikcraft"
+              >Projeto 04</a
+            >
+          </div>
+          <div class="quadrado-azul">
+            <a href="https://github.com/lincon-cardoso/Calculadora"
+              >Projeto 05</a
+            >
+          </div>
+          <div class="quadrado-azul">
+            <a href="https://github.com/lincon-cardoso/Formulario-De-Cadrastro"
+              >Projeto 06</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Rodapé -->
+      <footer id="contato-footer" class="contato">
+        <div class="informacoes-contato">
+          <!-- Título do rodapé -->
+          <h2>Contato</h2>
+          <!-- Formulário de contato -->
+          <form class="formulario-contato">
+            <div class="campo">
+              <!-- Campo para inserção do nome -->
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+            <div class="campo">
+              <!-- Campo para inserção do e-mail -->
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="campo">
+              <!-- Campo para inserção da mensagem -->
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <!-- Botão de envio do formulário -->
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

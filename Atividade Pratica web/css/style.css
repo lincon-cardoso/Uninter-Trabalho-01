@@ -1,0 +1,243 @@
+/* Reset de margem, preenchimento e box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo da barra de navegação */
+nav {
+  padding: 0 15px;
+}
+
+/* Estilo do contêiner central */
+.centralizar {
+  background-color: black;
+  width: 1088px;
+  height: 150px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+/* Estilo do logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  margin-left: 30px;
+}
+
+/* Estilo da imagem do logo */
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Estilo da lista de navegação */
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 700px;
+  height: 140px;
+  padding: 15px;
+  margin-right: 30px;
+}
+
+/* Estilo dos links na barra de navegação */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+/* Efeito hover nos links */
+nav ul li a:hover {
+  color: #555;
+  transition: 0.5s;
+}
+
+/* Estilo dos itens da lista */
+ul li {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo da seção 'Sobre Mim' */
+.sobre_mim {
+  width: 1088px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo do cabeçalho da seção 'Sobre Mim' */
+.sobre_mim header {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Estilo do conteúdo da seção 'Sobre Mim' */
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Adicionando margem */
+}
+
+/* Estilo do artigo na seção 'Sobre Mim' */
+.conteudo > article {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+/* Estilo do parágrafo na seção 'Sobre Mim' */
+.sobre_mim .conteudo article p {
+  font-size: 25px;
+  line-height: 1.5;
+  background-color: #c5c5c5;
+  padding: 30px;
+}
+
+/* Estilo da seção 'Formação' */
+.conteudo-formacao {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Estilo do conteúdo da seção 'Formação' */
+.conteudo-formacao .conteudo {
+  flex-direction: row-reverse;
+}
+
+/* Estilo do artigo na seção 'Formação' */
+.conteudo-formacao article {
+  width: 800px;
+}
+
+/* Estilo do cabeçalho da seção 'Formação' */
+.conteudo-formacao header h2 {
+  font-size: 58px;
+}
+
+/* Estilo do parágrafo na seção 'Formação' */
+.conteudo-formacao article p {
+  font-size: 25px;
+  line-height: 1.25;
+}
+
+/* Estilo da imagem na seção 'Formação' */
+.conteudo-formacao figure img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Estilo da seção 'Portfólio' */
+.portifolio {
+  height: 800px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+}
+
+/* Estilo do conteúdo da seção 'Portfólio' */
+.portifolio-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 520px;
+}
+
+/* Estilo dos quadrados azuis do portfólio */
+.quadrado-azul {
+  border: 1px solid red;
+  width: 150px;
+  height: 270px;
+  margin: 10px;
+}
+
+/* Estilo do título da seção 'Portfólio' */
+.portifolio h2 {
+  font-size: 58px;
+}
+
+/* Estilo dos links dentro do conteúdo do 'Portfólio' */
+.portifolio-conteudo a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70%; /* Ajuste de margem superior */
+}
+
+/* Estilo da seção de 'Contato' */
+.contato {  
+  background-color: #D9D9D9;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo do contêiner das informações de contato */
+.informacoes-contato {
+  text-align: left;
+}
+
+/* Estilo do formulário de contato */
+.formulario-contato {
+  width: 400px;
+}
+
+/* Estilo dos campos do formulário */
+.campo {
+  margin-bottom: 30px;
+}
+
+/* Estilo das etiquetas dos campos */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada de texto, e-mail e área de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilo do botão de envio do formulário */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
